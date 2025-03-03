@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <title>Portafolio Web</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>IZ</h1>
+        <div class="datos">
+          <a href="#a">QUIEN SOY?</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#projects">PROJECTS</a>
+        </div>
+        <button class="contact">
+          <a href="#form">CONTACTS</a>
+          <img src="./src/img/chat.png" alt="" />
+        </button>
+      </nav>
+    </header>
+
+    <section class="section_uno">
+      <div class="img_uno">
+        <img src="./src/img/yo.png" alt="" />
+      </div>
+      <div class="yo">
+        <h1>Soy Isaac Zanafria <br />Desarrollador de Frontend</h1>
+        <button><a href="#projects">MY PROJECTS</a></button>
+      </div>
+      <div class="img_dos">
+        <img src="./src/img/logo.jpg" alt="" />
+      </div>
+    </section>
+
+    <section id="a" class="section_dos">
+      <div class="img_tres">
+        <img src="./src/img/analista-de-datos.png" alt="" />
+      </div>
+      <div class="presentacion">
+        <h2>QUIEN SOY?</h2>
+        <p>
+          Soy un desarrollador de Frontend, especializado en Html y Css, aunque
+          tengo algunos conocimientos de Java Script y Tailwind.
+          <br /><br />
+          Me encanta la programacion, deseo siempre aprender mas de ella y
+          trabajar con ella.
+          <br /><br />
+          Ademas amo los videojuegos y jugar volleyball
+        </p>
+        <button><a href="#projects">MY PROJECTS</a></button>
+      </div>
+      <div class="img_cuatro">
+        <img src="./src/img/ingeniero-informatico.png" alt="" />
+      </div>
+    </section>
+
+    <section id="skills" class="section_tres">
+      <h2>MY SKILLS</h2>
+      <div class="skills">
+        <div class="logos">
+          <img src="./src/img/html.png" alt="" />
+          <img src="./src/img/css.png" alt="" />
+          <img src="./src/img/js.png" alt="" />
+          <img src="./src/img/tailwind.png" alt="" />
+        </div>
+        <div class="cv">
+          <h2>1</h2>
+          <p>Año de <br />experiencia <br />trabajando</p>
+          <button>
+            <a href="./src/pdf/CV Isaac Zanafria.pdf" download=""
+              >DESCARGA MI CV</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section_cuatro">
+      <div class="texto">
+        <h3>TRABAJOS QUE HE DISFRUTADO HACER</h3>
+        <span >CLICK EN LA IMAGEN</span>
+      </div>
+
+      <div class="proyectos">
+        <div class="imgs">
+          <a href="https://stunning-tanuki-6a30ca.netlify.app/" target="_blank"
+            ><img src="./src/img/proyecto1.png" alt=""
+          /></a>
+        </div>
+        <div class="imgs">
+          <a href="https://deft-tiramisu-cfd670.netlify.app/" target="_blank"
+            ><img src="./src/img/proyecto2.png" alt=""
+          /></a>
+        </div>
+        <div class="imgs">
+          <a
+            href="https://imaginative-pavlova-a46e67.netlify.app/"
+            target="_blank"
+            ><img src="./src/img/proyecto3.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="form" class="section_cinco">
+      <form>
+        <h3>LET´S HAVE A CHAT</h3>
+        <div>
+          <input
+            class="inf"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="YOUR NAME"
+          />
+        </div>
+        <div>
+          <input
+            class="inf"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="EMAIL"
+          />
+        </div>
+        <div>
+          <textarea
+            class="inf_3"
+            name="chat"
+            id="chat"
+            placeholder="CHAT"
+          ></textarea>
+        </div>
+        <button type="submit">SUBMIT HERE</button>
+      </form>
+    </footer>
+  </body>
+</html>
