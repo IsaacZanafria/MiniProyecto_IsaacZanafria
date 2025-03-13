@@ -1,35 +1,88 @@
 const habilidad = document.querySelector(`#hability`);
 const info = [
     {
-        "imagen": "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
+        "imagen": "./src/img/html.png",
         "nombre": "HTML",
         "nivel": 2
     },
     {
-        "imagen": "https://cdn-icons-png.flaticon.com/512/5968/5968242.png",
+        "imagen": "./src/img/css.png",
         "nombre": "CSS",
         "nivel": 2
     },
     {
-        "imagen": "https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png",
+        "imagen": "./src/img/tailwind.png",
         "nombre": "Tailwind",
         "nivel": 2
     },
     {
-        "imagen": "https://img.icons8.com/color/512/javascript.png",
+        "imagen": "./src/img/js.png",
         "nombre": "JavaScript",
         "nivel": 1
-    }
+    },
+    {
+        "imagen": "./src/img/react.png",
+        "nombre": "React",
+        "nivel": 1
+    },
+    {
+        "imagen": "./src/img/nodejs.png",
+        "nombre": "NodeJS",
+        "nivel": 1
+    },
+    /*{
+        "imagen": "./src/img/git.png",
+        "nombre": "Git",
+        "nivel": 1
+    },
+    {
+        "imagen": "./src/img/github.png",
+        "nombre": "GitHub",
+        "nivel": 1
+    }*/
 ]
+
 
 listaHabilidades(info, habilidad)
 
 function listaHabilidades(items, card){
-   
+    card.innerHTML = ""
     for (let i = 0; i < items.length; i++){
         const item = items[i];
         const template = `
             <div class="logos">
+            <img src="${item.imagen}" alt="${item.nombre}" />
+            <div class="text">
+              <span>Nombre: ${item.nombre}</span>
+              <span>Nivel: ${item.nivel}</span>
+            </div>
+          </div>`;
+          card.innerHTML += template;
+    }
+}
+
+const exhabil = document.querySelector(`#extra_hability`);
+const info_2 = [
+    {
+        "imagen": "./src/img/git.png",
+        "nombre": "Git",
+        "nivel": 1
+    },
+    {
+        "imagen": "./src/img/github.png",
+        "nombre": "GitHub",
+        "nivel": 1
+    }
+]
+
+listaExtraHabilidades(info_2, exhabil)
+
+function listaExtraHabilidades(items, card){
+    card.innerHTML = ""
+    for (let i = 0; i < items.length; i++){
+        const item = items[i];
+        const template = `
+            <div class="extra_logos">
             <img src="${item.imagen}" alt="${item.nombre}" />
             <div class="text">
               <span>Nombre: ${item.nombre}</span>
