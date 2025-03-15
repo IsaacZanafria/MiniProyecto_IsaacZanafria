@@ -1,3 +1,4 @@
+//HABILIDADES
 const habilidad = document.querySelector(`#hability`);
 const info = [
     {
@@ -42,7 +43,6 @@ const info = [
     }*/
 ]
 
-
 listaHabilidades(info, habilidad)
 
 function listaHabilidades(items, card){
@@ -61,6 +61,9 @@ function listaHabilidades(items, card){
     }
 }
 
+
+
+//HABILIDADES EXTRA
 const exhabil = document.querySelector(`#extra_hability`);
 const info_2 = [
     {
@@ -92,3 +95,26 @@ function listaExtraHabilidades(items, card){
           card.innerHTML += template;
     }
 }
+
+
+
+//BOTON DE MENU
+const botonMenu = document.querySelector(`#botonmenu`)
+const opcion = document.querySelector(`#option`)
+const opcion2 = document.querySelector(`#option2`)
+const opcion3 = document.querySelector(`#option3`)
+const barraNav = document.querySelector(`#navbar`)
+
+botonMenu.addEventListener(`click`, function(){
+    barraNav.classList.toggle("menu")
+})
+
+opcion.addEventListener("click", function(){
+    barraNav.classList.add("menu")
+})
+opcion2.addEventListener("click", function(){
+    barraNav.classList.add("menu")
+})
+opcion3.addEventListener("click", function(){
+    barraNav.classList.add("menu")
+})

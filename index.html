@@ -3,24 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./src/scripts/habilidades.js"  defer></script>
+    <script src="./src/scripts/habilidades.js" defer></script>
     <link rel="stylesheet" href="./src/styles/style.css" />
     <title>Portafolio Web</title>
   </head>
   <body>
     <header>
-      <nav>
-        <h1>IZ</h1>
+      <h1>IZ</h1>
+
+      <nav class="menu" id="navbar">
         <div class="datos">
-          <a href="#a">QUIEN SOY?</a>
-          <a href="#skills">SKILLS</a>
-          <a href="#projects">PROJECTS</a>
+          <a id="option" href="#a">QUIEN SOY?</a>
+          <a id="option2" href="#skills">SKILLS</a>
+          <a id="option3" href="#projects">PROJECTS</a>
         </div>
-        <button class="contact">
-          <a href="#form">CONTACTS</a>
-          <img src="./src/img/chat.png" alt="" />
-        </button>
       </nav>
+
+      <button class="botonmenu" id="botonmenu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="Outline"
+          viewBox="0 0 24 24"
+          width="22"
+          height="19"
+        >
+          <rect y="11" width="24" height="2" rx="1" />
+          <rect y="4" width="24" height="2" rx="1" />
+          <rect y="18" width="24" height="2" rx="1" />
+        </svg>
+      </button>
+
+      <button class="contact">
+        <a href="#form">CONTACTS</a>
+        <img src="./src/img/chat.png" alt="" />
+      </button>
     </header>
 
     <section class="section_uno">
@@ -29,14 +45,14 @@
       </div>
       <div class="yo">
         <h1>Soy Isaac Zanafria <br />Desarrollador de Frontend</h1>
-        <button><a href="#projects">MY PROJECTS</a></button>
+        <button id="a"><a href="#projects">MY PROJECTS</a></button>
       </div>
       <div class="img_dos">
         <img src="./src/img/logo.jpg" alt="" />
       </div>
     </section>
 
-    <section id="a" class="section_dos">
+    <section  class="section_dos">
       <div class="img_tres">
         <img src="./src/img/analista-de-datos.png" alt="" />
       </div>
@@ -51,14 +67,14 @@
           <br /><br />
           Ademas amo los videojuegos y jugar volleyball
         </p>
-        <button><a href="#projects">MY PROJECTS</a></button>
+        <button id="skills"><a href="#projects">MY PROJECTS</a></button>
       </div>
       <div class="img_cuatro">
         <img src="./src/img/ingeniero-informatico.png" alt="" />
       </div>
     </section>
 
-    <section id="skills" class="section_tres">
+    <section class="section_tres">
       <h2>MY SKILLS</h2>
       <div class="skills">
         <div class="habilidades" id="hability">
@@ -82,7 +98,7 @@
       </div>
 
       <div class="extra_skills">
-        <h3>OTHER SKILLS</h3>
+        <h3 id="projects">OTHER SKILLS</h3>
         <div class="extra_habilidades" id="extra_hability">
           <!--<div class="extra_logos">
             <img src="./src/img/git.png" alt="" />
@@ -95,7 +111,7 @@
       </div>
     </section>
 
-    <section id="projects" class="section_cuatro">
+    <section  class="section_cuatro">
       <div class="texto">
         <h3>TRABAJOS QUE HE DISFRUTADO HACER</h3>
         <span>CLICK EN LA IMAGEN</span>
